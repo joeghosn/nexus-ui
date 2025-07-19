@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow admin routes from search engines
+Disallow: /admin/
+Disallow: /login
+
+# Sitemap location (replace with your actual domain)
+Sitemap: https://cueforartproduction.com/sitemap.xml
+
+

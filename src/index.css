@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Font families */
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* Colors - using OKLCH color space for better color handling */
+  --color-primary-gold: #e9b85e;
+  --color-primary-gold-dark: #d39f43;
+  --color-background: #000000;
+  --color-surface: #1a1a1a;
+  --color-surface-alt: #222222;
+  --color-text-main: #ffffff;
+  --color-text-subtle: #888888;
+  --color-accent: #f5c770;
+  --color-muted: #444444;
+
+  /* Status colors */
+  --color-success: #10b981;
+  --color-success-dark: #059669;
+  --color-error: #ef4444;
+  --color-error-dark: #dc2626;
+  --color-warning: #f59e0b;
+  --color-warning-dark: #d97706;
+
+  /* Custom font sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 4rem;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-heading: 700;
+  --font-weight-heading-semibold: 600;
+
+  /* Letter spacing */
+  --tracking-normal: 0em;
+  --tracking-wide: 0.05em;
+
+  /* Border radius */
+  --radius-card: 0.75rem;
+  --radius-button: 0.75rem;
+
+  /* Custom spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+
+  /* Custom shadows */
+  --shadow-soft: 0 2px 8px rgb(0 0 0 / 0.2);
+  --shadow-glow: 0 0 12px rgb(233 184 94 / 0.6);
+
+  /* Custom timing functions */
+  --ease-in-out: ease-in-out;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heading);
+}
+
+/* Custom Scrollbar Styles for CUE For Art Production */
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--color-surface-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-gold-dark);
+  border-radius: 8px;
+  border: 2px solid var(--color-surface-alt);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-gold);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-gold-dark) var(--color-surface-alt);
+}
